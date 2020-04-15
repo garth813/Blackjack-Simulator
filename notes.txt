@@ -1,0 +1,13 @@
+Program flow
+
+main()
+    build_deck()
+        calls malloc and returns a pointer to the array we're creating
+
+    shuffle_deck() called after build deck, just shuffles everything, will also be called after shoe runs out
+
+    clear_hand()    clears out all the old data and prepares for the next hand
+
+    play()
+        deal()
+

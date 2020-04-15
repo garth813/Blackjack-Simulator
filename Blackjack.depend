@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1585248379 source:/home/brian/Programming/C/Blackjack/functions.c
+
+1586035427 source:/home/brian/Programming/C/Blackjack/main.c
+	<stdio.h>
+	<stdlib.h>
+	"headers.h"
+	"functions.c"
+
+1586036406 /home/brian/Programming/C/Blackjack/headers.h
+	<stdbool.h>
+
+1586036300 /home/brian/Programming/C/Blackjack/functions.c
+	<stdio.h>
+	<stdlib.h>
+	"headers.h"
+
