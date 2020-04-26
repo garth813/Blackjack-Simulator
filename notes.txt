@@ -10,4 +10,9 @@ main()
 
     play()
         deal()
+            card_counter_function()  // counts the cards that were dealt
+                                     // the function counts differently for all the counting systems
+            check_blackjack()       // if the player or house has blackjack end the round automatically
+                player_sum()        // we need to sum the hands in order to see who has blackjack
+                house_sum()         // see if house has blackjack as well
 

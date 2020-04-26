@@ -25,7 +25,7 @@ struct red7
     bool count_7;    // only modified in the card_counter function
                     // count_7 is unique only to this counting system
     int hand_position;
-    int current_sum;
+    int hand_sum;
     bool is_soft;
 
     int current_hand[HAND_LIMIT];
@@ -38,7 +38,7 @@ struct hi_lo
     double bet;
     int count;
     int hand_position; // keeps track of where the next card will go in the array
-    int current_sum;
+    int hand_sum;
     bool is_soft;
 
     int current_hand[HAND_LIMIT];
@@ -53,7 +53,7 @@ struct player
 struct casino_hand
 {
     int hand[HAND_LIMIT];
-    int current_sum;
+    int hand_sum;
     int hand_position;
     bool is_soft;
 };
@@ -66,7 +66,7 @@ struct house
     bool early_surrender;
     bool late_surrender;
     bool dealer_hit_soft17;
-    bool blackjack_even_money;
+    double blackjack_pays;
 
     // shoe stuff
     int total_cards; // how many total cards go in the shoe
@@ -79,5 +79,10 @@ void clear_hand(struct player * p, struct house * h);
 int * build_deck(int n, int * deck);
 void player_hit(struct player * p, struct house * h, char count_name);
 void card_counter_function(struct player * p, int card);
-void play(struct player * p, struct house *h);
+void play(struct player * p, struct house * h);
+void deal(struct player * p, struct house * h);
+void check_blackjack(struct player * p, struct house * h);
+void player_sum(struct player * p,char COUNTING_SYSTEM);
+void house_sum(struct house * h);
+void record(struct player * p, struct house * h);
 #endif

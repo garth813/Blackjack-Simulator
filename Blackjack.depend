@@ -15,3 +15,17 @@
 	<stdlib.h>
 	"headers.h"
 
+1587447861 source:/home/chance/Programming/Blackjack/main.c
+	<stdio.h>
+	<stdlib.h>
+	"headers.h"
+	"functions.c"
+
+1587880935 /home/chance/Programming/Blackjack/headers.h
+	<stdbool.h>
+
+1587881717 /home/chance/Programming/Blackjack/functions.c
+	<stdio.h>
+	<stdlib.h>
+	"headers.h"
+
