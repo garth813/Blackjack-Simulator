@@ -16,6 +16,7 @@
 #define CARDS 52
 #define RED_COUNT 'R'
 #define HI_LO_COUNT 'H'
+#define CASINO_HAND 'C'
 
 struct red7
 {
@@ -78,11 +79,13 @@ struct house
 void clear_hand(struct player * p, struct house * h);
 int * build_deck(int n, int * deck);
 void player_hit(struct player * p, struct house * h, char count_name);
+void house_hit(struct house * h);
 void card_counter_function(struct player * p, int card);
 void play(struct player * p, struct house * h);
 void deal(struct player * p, struct house * h);
 void check_blackjack(struct player * p, struct house * h);
 void player_sum(struct player * p,char COUNTING_SYSTEM);
+void sum_hand(struct player * p, struct house * h, const char hand_id);
 void house_sum(struct house * h);
-void record(struct player * p, struct house * h);
+void print_status(struct player * p, struct house * h);
 #endif

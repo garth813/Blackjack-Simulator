@@ -10,6 +10,7 @@ main()
 
     play()
         deal()
+            clear_hand()             // clears out all the old data and prepares for the next hand
             card_counter_function()  // counts the cards that were dealt
                                      // the function counts differently for all the counting systems
             check_blackjack()       // if the player or house has blackjack end the round automatically

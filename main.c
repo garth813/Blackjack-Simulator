@@ -40,6 +40,7 @@ int main(void)
 
     // initialize red7
     p.red7_hand.chips = 0;
+    // red7 is an unbalanced counting system
     p.red7_hand.count = DECKS * (-2);
 
     // clear hand does the rest of the initializations
